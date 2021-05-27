@@ -22,6 +22,8 @@ import json
 token=#your token
 text=input('qrcodeにしたいtextを入力してください')
 
+print("通信中")
+
 query={
    "text": text
    }
