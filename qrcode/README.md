@@ -8,7 +8,7 @@
 
 戻り値
 
-名前:url 例:qrcode.dmssite.cf/api/create/<token>
+名前:url 例:https://qrcode.dmssite.cf/api/create/<token>
 
 ### 読み取り
 
