@@ -26,6 +26,10 @@
 
 名前:text 例:https://example.com
 
+エラー値:
+
+名前:error 例:That qrcode is invalid.
+
 
 ### example code(qrcode作成)
 ```python
@@ -48,24 +52,14 @@ print(api["url"])
 ### example code(読み取り)
 ```python
 import requests
-
 import json
-
 text=input('qrcodeにしたいtextを入力してください：')
-
 token= #your token
-
 print("通信中")
-
 query={
-
   "url": text
-
 }
-
 res=requests.get(f'https://qrcode.dmssite.cf/api/read/{token}',params=query)
-
 api=json.loads(res.text)
-
 print(api["text"])
 ```
