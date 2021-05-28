@@ -42,7 +42,8 @@ query={
 }
 res=requests.get(f'https://qrcode.dmssite.cf/api/create/{token}',params=query)
 api=json.loads(res.text)
-print(api["url"])```
+print(api["url"])
+```
 
 ### example code(読み取り)
 ```python
@@ -66,4 +67,5 @@ res=requests.get(f'https://qrcode.dmssite.cf/api/read/{token}',params=query)
 
 api=json.loads(res.text)
 
-print(api["text"])```
+print(api["text"])
+```
