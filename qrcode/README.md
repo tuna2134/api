@@ -61,5 +61,8 @@ query={
 }
 res=requests.get(f'https://qrcode.dmssite.cf/api/read/{token}',params=query)
 api=json.loads(res.text)
-print(api["text"])
+if api["error"]:
+  print("QRCODEが無効です")
+else:
+  print(api["text"])
 ```
