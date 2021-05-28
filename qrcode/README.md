@@ -27,7 +27,7 @@
 名前:text 例:https://example.com
 
 
-### example code
+### example code(qrcode作成)
 ```python
 import requests
 import json
